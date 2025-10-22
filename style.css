@@ -1,0 +1,339 @@
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+htmt {
+  scroll-behavior: smooth;
+}
+
+
+
+:root {
+  --primary-color: #4f46e5;
+  --secondary-color: #7c3aed 
+
+  --maisEscuro: #0a0f1c ;
+   --escuro: #0f172a;
+  --claro: #e2e8f0 ;
+  --vidro: rgba(255, 255, 255, 0.1);
+}
+
+
+
+body {
+  background-color: var(--escuro);
+  color: var(--claro);
+}
+
+
+
+.navegacao {
+  position: fixed;
+  top: 0;
+  background: rgba(15, 23, 42, 0.8);
+  width: 100%;
+  height: 4rem;
+  z-index: 100;
+  padding: 1.5rem;
+}
+
+
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+}
+
+
+.menu-link {
+  text-decoration: none;
+  color: var(--claro);
+  font-weight: 500;
+  position: relative;
+  padding: 0.5rem 0;
+}
+
+.menu-link::before {
+  
+content: '';
+  position: absolute;
+
+   height: 2px;
+  width:0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: var(--primary-color), var(--secondary-color);
+
+transition: width 0.5s ease;
+
+
+}
+
+.menu-link:hover::after {
+  width: 100%;
+
+}
+
+
+  
+
+
+
+
+ 
+.cabecalho{
+min-height: 100vh;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+
+
+
+
+
+
+.icons{
+       display: flex; /* Torna os itens um flex container */
+    justify-content: center; /* Alinha os ícones no centro horizontal */
+    align-items: center; /* Alinha os ícones no centro vertical */
+    gap: 20px; 
+  
+
+    gap: 10px; 
+}
+
+/* Opcional: Estilo das imagens para controle de tamanho */
+.container-imagens img {
+    width: 30%; /* Exemplo: Cada imagem ocupará 30% da largura do contêiner */
+    height: auto;
+}
+
+
+
+
+
+.foto-minha{
+width: 300px; 
+height: 300px;
+box-shadow: 0 0 20PX rgba(79,70 ,229,0.3);
+border-radius: 50%;
+border: 4PX solid var(--vidro);
+animation: flutuar 5s  ease-in-out infinite;
+
+}
+
+
+h1{
+  font-size: 3.5rem;
+  color: var(--primary-color);
+  font-weight: bold;
+  margin: 20px;
+}
+
+.cargo{
+  font-size: 2rem;
+  color: var(--claro);
+}
+
+
+.sobre{
+padding: 6rem 2rem;
+
+}
+
+
+.sobre-titulo{
+font-size: 3rem;
+color: var(--claro);
+text-align: center;
+margin-bottom: 20px
+
+}
+
+.sobre-caixa{
+padding: ;  2rem;
+max-width: 600px;
+margin: 0 auto;
+border-radius: 16px;
+border: 1px solid var(--vidro);
+
+background: #ffffff1a;
+
+backdrop-filter: blur(10px);
+
+}
+
+.sobre-paragrafo{
+  font-size: 1.2rem;
+  color: var(--claro);
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.projetos{
+padding: 6rem 2rem;
+}
+
+
+.projetos-caixa{
+  display: flex;
+  flex-wrap:wrap ;
+
+  grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-decoration: none;
+}
+
+.linkcafe{
+  text-decoration: none;
+   color: inherit;
+}
+
+
+.projetos a{
+
+
+}
+
+
+.projetos-card{
+ 
+display: grid;
+background:#ffffff1a; ;
+border-radius: 16px;
+backdrop-filter: blur(5px);
+border: 1px; solid var(--vidro);
+overflow: hidden;
+transition: all 0.5s ease;
+cursor: pointer;
+
+
+
+
+}
+
+
+.img-project{
+  display: grid;
+  width: 30vh;
+  height: 30vh;
+   grid-template-columns: repeat(auto-fit, minmax(300px, 2fr));
+}
+
+
+
+.projetos-titulo{
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+
+.projetos-card:hover{
+  box-shadow: 0 10px 20px rgba(79,70 ,229,0.3);
+  transform: translateY(-10px) scale(1.03) ;
+}
+
+
+
+
+
+
+
+.info-projetos{
+margin-bottom: 5px;
+}
+
+
+
+.paragrafo-projetos{
+color: rgba(226,232,240,0.8);
+line-height: 1.25rem;
+
+}
+
+.caixa-textos-projetos{
+  padding: 1.5rem;
+}
+
+
+.contato{
+padding: 6rem 2rem;
+}
+
+
+.contato-titulo{
+text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+
+
+
+contato-formulario{
+max-width: 600px;
+margin: 0 auto;
+background:#ffffff1a; 
+backdrop-filter: blur(5px);
+padding: 2rem;
+border: 1px  solid var(--vidro);
+border-radius: 16px;
+}
+
+
+
+
+.nome-form{
+
+}
+
+.grupo-form{
+margin-bottom: 1.5rem;
+}
+
+.campo-form{
+width: 100%;
+padding: 1rem;
+background:#ffffff1a;
+border-radius: 8px;
+color: var(--claro);
+border: 1px solid var(--vidro);
+outline: none;
+
+}
+
+
+.campo-form:focus{
+  border-color: var(--primary-color);
+ box-shadow:  0 0 10px var(--primary-color);
+}
+
+
+
+.text-form{
+
+}
+
+
+@keyframes flutuar {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+
+}
